@@ -1,18 +1,18 @@
 <?php
 /**
  * @package Awesome
- * @version 1.0
+ * @version 1.1
  */
 /*
 Plugin Name: Awesome MGalang
 Plugin URI: http://wordpress.org/extend/plugins/awesome-mgalang/
 Description: Everything is awesome
 Author: Mio Galang
-Version: 1.0
+Version: 1.1
 */
 
 function get_expression() {
-    return 'Everything is awesome!';
+    return 'Everything is awesome yahoo!';
 }
 
 // This just echoes the chosen line, we'll position it later

@@ -4,7 +4,7 @@ Donate link: http://www.zendesk.com/
 Tags: test
 Requires at least: 2.9.2
 Tested up to: 4.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 Bring the helpdesk into your blog
 
@@ -114,6 +114,9 @@ To upload the plugin through WordPress, instead of FTP:
 
 = 1.0 =
 * Initial
+
+= 1.1 =
+* More awesome
 
 == Upgrade Notice ==
 
