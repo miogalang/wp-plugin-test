@@ -56,14 +56,6 @@ elif [ "$PLUGINVERSION" = "$READMEVERSION" ]; then
 	echo "Versions match in readme.txt and $MAINFILE. Let's proceed..."
 fi
 
-if git show-ref --tags --quiet --verify -- "refs/tags/$PLUGINVERSION"
-	then
-		echo "Version $PLUGINVERSION already exists as git tag. Exiting....";
-		exit 1;
-	else
-		echo "Git version does not exist. Let's proceed..."
-fi
-
 echo
 echo "Creating local copy of SVN repo trunk ..."
 svn checkout $SVNURL $SVNPATH --depth immediates
