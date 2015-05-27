@@ -1,6 +1,12 @@
 #! /bin/bash
 # See https://github.com/GaryJones/wordpress-plugin-git-flow-svn-deploy for instructions and credits.
 
+# Check for arguments
+if [[ $# -eq 0 ]] ; then
+    echo 'Please pass your svn password as an argument'
+    exit 1
+fi
+
 echo
 echo "WordPress Plugin Git SVN Deploy v2.0.0"
 echo
@@ -25,12 +31,12 @@ GITURL="git@github.com:miogalang/wp-plugin-test.git"
 # SVN config
 # Path to temporary svn repo
 SVNPATH="$PLUGINDIR/tmp/svn/$PLUGINSLUG"
-
 # URL of SVN repo
 SVNURL="https://subversion.assembla.com/svn/$PLUGINSLUG"
-
 # User to use for svn repo
 SVNUSER="miog"
+# Password to be passed when calling the script
+SVNPASS=$1
 
 
 # Let's begin...
