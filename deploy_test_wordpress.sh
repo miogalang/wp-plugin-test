@@ -10,17 +10,8 @@ echo
 # Plugin slug name
 PLUGINSLUG='wp-plugin-test'
 
-# Path to temporary svn repo
-SVNPATH="./tmp/svn/$PLUGINSLUG"
-
-# URL of SVN repo
-SVNURL="https://subversion.assembla.com/svn/$PLUGINSLUG"
-
-# User to use for svn repo
-SVNUSER="miog"
-
 # Local directory where to find the git repository
-PLUGINDIR="./tmp/git/$PLUGINSLUG"
+PLUGINDIR=`pwd`
 
 # Name of the main file of the plugin
 MAINFILE="hello.php"
@@ -31,6 +22,17 @@ GITPATH="$PLUGINDIR/"
 # Plugin git url
 GITURL="git@github.com:miogalang/wp-plugin-test.git"
 
+# SVN config
+# Path to temporary svn repo
+SVNPATH="$PLUGINDIR/tmp/svn/$PLUGINSLUG"
+
+# URL of SVN repo
+SVNURL="https://subversion.assembla.com/svn/$PLUGINSLUG"
+
+# User to use for svn repo
+SVNUSER="miog"
+
+
 # Let's begin...
 echo ".........................................."
 echo
@@ -38,9 +40,6 @@ echo "Preparing to deploy WordPress plugin"
 echo
 echo ".........................................."
 echo
-
-echo "Making a copy of the git repository"
-git clone $GITURL $PLUGINDIR
 
 # Check version in readme.txt is the same as plugin file after translating both to unix line breaks to work around grep's failure to identify mac line breaks
 PLUGINVERSION=`grep "Version:" $GITPATH/$MAINFILE | awk -F' ' '{print $NF}' | tr -d '\r'`
@@ -120,11 +119,6 @@ echo "Removing temporary directory $SVNPATH"
 cd $SVNPATH
 cd ..
 rm -fr $SVNPATH/
-
-echo "Removing temporary directory $PLUGINDIR"
-cd $PLUGINDIR
-cd ..
-rm -fr $PLUGINDIR/
 
 echo "*** FIN ***"
 echo
