@@ -1,11 +1,11 @@
 <?php
 /**
-Plugin Name: Awesome MGalang
-Plugin URI: http://wordpress.org/extend/plugins/awesome-mgalang/
-Description: Everything is awesome
-Author: Mio Galang
-Version: 1.2.4
-*/
+ * Plugin Name: Awesome MGalang
+ * Plugin URI: http://wordpress.org/extend/plugins/awesome-mgalang/
+ * Description: Everything is awesome
+ * Author: Mio Galang
+ * Version: 1.2.5
+ */
 
 function get_expression() {
     return 'Everything is awesome yahoo!';

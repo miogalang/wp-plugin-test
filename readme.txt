@@ -4,7 +4,7 @@ Donate link: http://www.zendesk.com/
 Tags: test
 Requires at least: 2.9.2
 Tested up to: 4.2.1
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 
 Bring the helpdesk into your blog
 
