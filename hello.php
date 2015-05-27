@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/extend/plugins/awesome-mgalang/
  * Description: Everything is awesome
  * Author: Mio Galang
- * Version: 1.3.1
+ * Version: 1.3.3
  */
 
 function get_expression() {
