@@ -4,7 +4,7 @@ Donate link: http://www.zendesk.com/
 Tags: test
 Requires at least: 2.9.2
 Tested up to: 4.2.1
-Stable tag: 1.3.4
+Stable tag: 1.3.5
 
 Bring the helpdesk into your blog
 
@@ -50,6 +50,9 @@ Do not ask questions
 
 = 1.2.9 =
 * This should work now
+
+= 1.3.5 =
+* This is the best version yet you can guarantee it!
 
 == Upgrade Notice ==
 
